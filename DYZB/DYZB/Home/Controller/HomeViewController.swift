@@ -10,11 +10,21 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    //MARK：-懒加载属性
+    private lazy var pageTitleView: PageTitleView = {
+        let titleFrame = CGRect(x: 0, y: 90, width: kScreenW, height: 40)
+        let titles = ["推荐", "游戏", "娱乐", "趣玩"]
+        let titleView = PageTitleView(frame: titleFrame, titles: titles)
+        return titleView
+    }()
+    
+    //MARK：-系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //设置UI界面
         setUpUI()
+        
     }
 
 }
@@ -22,8 +32,12 @@ class HomeViewController: UIViewController {
 //MARK:- 设置UI界面
 extension HomeViewController {
     private func setUpUI(){
-        //1.设置导航栏
+        
+        //设置导航栏
         setUpNavigationBar()
+        
+        //设置TitleView
+        view.addSubview(pageTitleView)
     }
     
     private func setUpNavigationBar(){
