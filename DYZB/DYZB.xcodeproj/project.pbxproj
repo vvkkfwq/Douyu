@@ -21,6 +21,8 @@
 		E2D629C024967AE5002688C3 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D629BE24967AE5002688C3 /* User.storyboard */; };
 		E2D629C52496802A002688C3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D629C42496802A002688C3 /* HomeViewController.swift */; };
 		E2D629C824968DB1002688C3 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D629C724968DB1002688C3 /* UIBarButtonItem-Extension.swift */; };
+		E2E3AD062497B53000630353 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3AD052497B53000630353 /* PageContentView.swift */; };
+		E2E3AD092497BF4F00630353 /* UIColor-Extentsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3AD082497BF4F00630353 /* UIColor-Extentsion.swift */; };
 		E2E6C20824974BE200469622 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E6C20724974BE200469622 /* PageTitleView.swift */; };
 		E2E6C20A249776F100469622 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E6C209249776F100469622 /* Common.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		E2D629BF24967AE5002688C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/User.storyboard; sourceTree = "<group>"; };
 		E2D629C42496802A002688C3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E2D629C724968DB1002688C3 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		E2E3AD052497B53000630353 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PageContentView.swift; path = DYZB/Main/View/PageContentView.swift; sourceTree = SOURCE_ROOT; };
+		E2E3AD082497BF4F00630353 /* UIColor-Extentsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extentsion.swift"; sourceTree = "<group>"; };
 		E2E6C20724974BE200469622 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		E2E6C209249776F100469622 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +155,7 @@
 		E2D6299624966183002688C3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E2E3AD042497B4E500630353 /* Controller */,
 				E2E6C20624974BA100469622 /* View */,
 				E2D6296C24962DDD002688C3 /* Main.storyboard */,
 				E2D6296A24962DDD002688C3 /* ViewController.swift */,
@@ -227,13 +232,22 @@
 			isa = PBXGroup;
 			children = (
 				E2D629C724968DB1002688C3 /* UIBarButtonItem-Extension.swift */,
+				E2E3AD082497BF4F00630353 /* UIColor-Extentsion.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E2E3AD042497B4E500630353 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		E2E6C20624974BA100469622 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E2E3AD052497B53000630353 /* PageContentView.swift */,
 				E2E6C20724974BE200469622 /* PageTitleView.swift */,
 				E2E6C209249776F100469622 /* Common.swift */,
 			);
@@ -378,9 +392,11 @@
 				E2D629C824968DB1002688C3 /* UIBarButtonItem-Extension.swift in Sources */,
 				E2E6C20824974BE200469622 /* PageTitleView.swift in Sources */,
 				E2D6296B24962DDD002688C3 /* ViewController.swift in Sources */,
+				E2E3AD062497B53000630353 /* PageContentView.swift in Sources */,
 				E2D6296724962DDD002688C3 /* AppDelegate.swift in Sources */,
 				E2D6296924962DDD002688C3 /* SceneDelegate.swift in Sources */,
 				E2D629C52496802A002688C3 /* HomeViewController.swift in Sources */,
+				E2E3AD092497BF4F00630353 /* UIColor-Extentsion.swift in Sources */,
 				E2E6C20A249776F100469622 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
